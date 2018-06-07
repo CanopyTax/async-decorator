@@ -1,0 +1,26 @@
+{
+  "name": "async-decorator",
+  "version": "0.0.1",
+  "description": "Async tools for React provide by a decorator (higher order component)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CanopyTax/async-decorator.git"
+  },
+  "keywords": [
+    "react",
+    "async",
+    "rxjs",
+    "rx",
+    "callbags"
+  ],
+  "author": "Bret Little",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CanopyTax/async-decorator/issues"
+  },
+  "homepage": "https://github.com/CanopyTax/async-decorator#readme"
+}

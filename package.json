@@ -51,7 +51,7 @@
     "regenerator-runtime": "^0.11.1",
     "rimraf": "^2.6.2",
     "rx": "4.x",
-    "rxjs": "6.x",
+    "rxjs": ">=5.x",
     "rxjs-compat": "6.x",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.3"

@@ -4,7 +4,10 @@
   "description": "Async tools for React provide by a decorator (higher order component)",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "prepublish": "npm run build",
+    "watch-tests": "jest --config jest.json --watch",
+    "test": "jest --config jest.json --coverage",
+    "build": "rimraf *.js && babel src/*.js --out-dir . --source-maps"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,32 @@
   "bugs": {
     "url": "https://github.com/CanopyTax/async-decorator/issues"
   },
-  "homepage": "https://github.com/CanopyTax/async-decorator#readme"
+  "homepage": "https://github.com/CanopyTax/async-decorator#readme",
+  "peerDependencies": {
+    "rx": "4.x",
+    "rxjs": "6.x",
+    "react": "16.x",
+    "callbag": "1.x"
+  },
+  "devDependencies": {
+    "rx": "4.x",
+    "rxjs": "6.x",
+    "react": "16.x",
+    "callbag": "1.x",
+    "@babel/cli": "^7.0.0-beta.46",
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "@babel/preset-react": "^7.0.0-beta.46",
+    "@babel/preset-stage-2": "^7.0.0-beta.46",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^22.4.3",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "regenerator-runtime": "^0.11.1",
+    "rimraf": "^2.6.2"
+  }
 }

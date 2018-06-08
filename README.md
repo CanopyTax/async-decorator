@@ -3,9 +3,9 @@ Async tools for React provided by a decorator
 
 ## Requirements and installation
 
-Async-decorator can be used with [RxJS 4](https://github.com/Reactive-Extensions/RxJS)
+Async-decorator can be used with [RxJS 4](https://github.com/Reactive-Extensions/RxJS) or [RxJS 6](https://github.com/ReactiveX/rxjs)
 
-Note: Implementations are in the works for [RxJS 6](https://github.com/ReactiveX/rxjs) and [callbags](https://github.com/staltz/callbag-basics).
+Note: We are currently implementing a version for [callbags](https://github.com/staltz/callbag-basics).
 
 Installation:
 
@@ -38,7 +38,8 @@ an event each time the prop changes according to the comparater callback.
 ## Example usage
 
 ```js
-import AsyncDecorator from "async-decorator/rx4.js";
+import AsyncDecorator from "async-decorator/rx4";
+// change to rx5 or rx6 if using those versions
 
 @AsyncDecorator
 class App extends React.Component {

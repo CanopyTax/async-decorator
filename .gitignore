@@ -60,4 +60,9 @@ typings/
 # next.js build output
 .next
 
-*.js.map
+rx4.js
+rx5.js
+rx6.js
+rx4.js.map
+rx5.js.map
+rx6.js.map

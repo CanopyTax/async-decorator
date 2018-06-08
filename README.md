@@ -3,7 +3,7 @@ Async tools for React provided by a decorator
 
 ## Requirements and installation
 
-Async-decorator can be used with [RxJS 4](https://github.com/Reactive-Extensions/RxJS) or [RxJS 6](https://github.com/ReactiveX/rxjs)
+Async-decorator can be used with [RxJS 4](https://github.com/Reactive-Extensions/RxJS) or [RxJS 5-6](https://github.com/ReactiveX/rxjs)
 
 Note: We are currently implementing a version for [callbags](https://github.com/staltz/callbag-basics).
 

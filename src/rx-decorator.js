@@ -5,7 +5,7 @@ const disabled =
 
 const inTestingEnv = typeof jasmine !== "undefined";
 
-export default function(React, Observable) {
+export default function(React, fromEventPattern) {
 
   return function MakeAsyncDecorator(DecoratedComponent) {
     if (disabled) {
@@ -68,7 +68,7 @@ export default function(React, Observable) {
       stream = prop => {
         if (this.observableCache[prop]) return this.observableCache[prop];
 
-        this.observableCache[prop] = Observable.fromEventPattern(
+        this.observableCache[prop] = fromEventPattern(
           h => {
             if (typeof prop === "function") {
               this.propFunctions.push([prop, h]);

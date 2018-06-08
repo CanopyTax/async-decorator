@@ -7,7 +7,8 @@
     "prepublish": "npm run build",
     "watch-tests": "jest --config jest.json --watch",
     "test": "jest --config jest.json --coverage",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
   },
   "repository": {
     "type": "git",

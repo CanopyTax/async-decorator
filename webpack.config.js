@@ -10,7 +10,8 @@ module.exports = {
   },
   output: {
     filename: "[name].js",
-    libraryTarget: "commonjs",
+    library: "async-decorator",
+    libraryTarget: "umd",
     path: path.resolve(__dirname, "."),
   },
   module: {

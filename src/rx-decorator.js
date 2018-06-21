@@ -72,8 +72,10 @@ export default function(React, fromEventPattern) {
           h => {
             if (typeof prop === "function") {
               this.propFunctions.push([prop, h]);
+              setTimeout(() => h(prop(this.props)));
             } else {
               this.propEvents[prop] = [...this.propEvents[prop], h];
+              setTimeout(() => h(this.props[prop]));
             }
           },
           h => {}

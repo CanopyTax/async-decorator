@@ -1,6 +1,6 @@
 {
   "name": "async-decorator",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Async tools for React provide by a decorator (higher order component)",
   "main": "index.js",
   "scripts": {

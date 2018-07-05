@@ -37,6 +37,7 @@ export default function(React, fromEventPattern) {
         return (
           <DecoratedComponent
             {...this.props}
+            ref={el => this.el = el}
             stream={this.stream}
             cancelWhenUnmounted={this.cancelWhenUnmounted}
             cancelAllSubscriptions={this.cancelAllSubscriptions}
